@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Html5 semantic</title>
+</head>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		html,body{
+			height: 100%;
+		}
+		header,footer{
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: orange;
+		}
+		section{
+			height: calc(100% - 100px);
+		}
+		nav,aside{
+			width: 100px;
+			height: 100%;
+			background: #ccc;
+			float: left;
+		}
+		main{
+			float: left;
+			width: calc(100% - 200px);
+			height: 100%;
+			background: white;
+		}
+		aside p{
+			font-size: 12px;
+		}
+	</style>
+<body>
+	<header>header</header>
+	<section>
+		<nav></nav>
+		<main>
+			<article>
+				<header>article-header</header>
+				<p>somthing here</p>
+				<footer></footer>
+			</article>
+		</main>
+		<aside>
+			<figure>Aside</figure>
+			<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+		</aside>
+	</section>
+	<footer>footer</footer>
+</body>
+</html>

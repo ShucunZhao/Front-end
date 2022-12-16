@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tag type convert</title>
+	<!--<link rel="stylesheet" type="text/css" href="./css/outside.css" />-->
+</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 300px;
+			margin: 0 auto;
+		}
+		ul{
+			list-style: none;
+		}
+		.box .item{
+			float:left;
+			width: 148px;
+			text-align: center;
+			border: 1px solid blue;
+			background: blue;
+			color: white;
+			line-height: 40px;
+
+		}
+		.item:hover{
+			background: lightblue;
+		}
+		.item ul{
+			display: none;
+			background: white;
+			color: black;
+		}
+		.item:hover ul{
+			display: block;
+		}
+		.item li:hover{
+			color: blue;
+		}
+	</style>
+<body>
+	<ul class="box">
+		<li class="item">Video tutorial
+			<ul>
+				<li>All</li>
+				<li>HTML5</li>
+				<li>CSS</li>
+				<li>C++</li>
+				<li>python</li>
+			</ul>
+		</li>
+		<li class="item">Grade examination
+			<ul>
+				<li>JZoffer</li>
+				<li>leetcode</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

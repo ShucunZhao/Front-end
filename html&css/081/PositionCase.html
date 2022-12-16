@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Position case </title>
+</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 912px;
+			height: 600px;
+			margin: 0 auto;
+			/*background: yellow;*/
+		}
+		.box{
+			 width: 275px;
+			 height: 275px;
+			 border: 6px solid #cccccc;
+			 position: relative;
+			 float: left;
+		}
+		.box .pic{
+			width:100%;
+			height: 100%;
+		}
+		.box .icon{
+			position: absolute;
+			left: 7px;
+			bottom: 7px;
+		}
+		.box .green{
+			display: none;
+		}
+		.box:hover .green{
+			display: block;
+		}
+		.box p{
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: white;
+			padding: 7px 5px;
+			display: none;
+		}
+		.box:hover p{
+			display: block;
+		}		
+		.box:hover .pic{
+			opacity: 0.7;
+		}
+	</style>
+<body>
+	<div class="container">
+		<div class="box">
+			<img src="./img/img001.jpg" class="pic">
+			<img src="./img/tu.gif" class="icon">
+			<img src="./img/tu2.gif" class="icon green">
+			<p>
+				<img src="./img/logo.gif">
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+			</p>
+		</div>
+		<div class="box">
+			<img src="./img/img02.jpg" class="pic">
+			<img src="./img/tu.gif" class="icon">
+			<img src="./img/tu2.gif" class="icon green">
+			<p>
+				<img src="./img/logo.gif">
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+			</p>
+		</div>
+		<div class="box">
+			<img src="./img/img03.jpg" class="pic">
+			<img src="./img/tu.gif" class="icon">
+			<img src="./img/tu2.gif" class="icon green">
+			<p>
+				<img src="./img/logo.gif">
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+			</p>
+		</div>
+		<div class="box">
+			<img src="./img/img04.jpg" class="pic">
+			<img src="./img/tu.gif" class="icon">
+			<img src="./img/tu2.gif" class="icon green">
+			<p>
+				<img src="./img/logo.gif">
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+			</p>
+		</div>
+		<div class="box">
+			<img src="./img/img05.jpg" class="pic">
+			<img src="./img/tu.gif" class="icon">
+			<img src="./img/tu2.gif" class="icon green">
+			<p>
+				<img src="./img/logo.gif">
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+			</p>
+		</div>
+		</div>
+		<div class="box">
+			<img src="./img/img06.jpg" class="pic">
+			<img src="./img/tu.gif" class="icon">
+			<img src="./img/tu2.gif" class="icon green">
+			<p>
+				<img src="./img/logo.gif">
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+				ttttttttttttttttttttttttttttttttttttttt
+			</p>
+		</div>		
+	</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>ResponseLayout</title>
+</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.top{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.top>div{
+			width: 49%;
+		}
+		.top img{
+			width: 100%;
+		}
+		.top .right{
+			display: flex;
+			justify-content: space-between;
+		}
+		.top .right>div{
+			width: 49%;
+		}
+		@media screen and (max-width: 768px){
+			.top>div{
+				width: 100%;
+			}
+		}
+		.bottom{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		.bottom>div{
+			width:23%;
+			padding: 5px;
+			box-sizing: border-box;
+			border: 1px solid gray;
+			margin-bottom: 10px;
+			box-shadow: 0 0 5px black;
+		}	
+		.bottom img{
+			width: 100%;
+		}
+
+		@media screen and (max-width: 1024px) and (min-width: 768px){
+			.bottom>div{
+				width: 31%;
+			}
+		}
+		@media screen and (max-width: 768px) and (min-width: 450px){
+			.bottom>div{
+				width: 48%;
+			}
+		}
+		@media screen and (max-width: 450px){
+			.bottom>div{
+				width: 90%;
+			}
+		}			
+    </style>
+</head>
+<body>
+    <div class="top">
+		<div class="left">
+			<img src="./img/swiper1.jpeg">
+		</div>
+		<div class="right">
+			<div>
+				<img src="./img/ad1.png">
+			</div>
+			<div>
+				<img src="./img/ad2.png">
+			</div>		
+		</div>	
+    </div>
+	<div class="bottom">
+		<div>
+			<img src="img/img1.jpg">
+			<p>Photographer</p>
+		</div>
+		<div>
+			<img src="img/img1.jpg">
+			<p>Photographer</p>
+		</div>
+		<div>
+			<img src="img/img1.jpg">
+			<p>Photographer</p>
+		</div>
+		<div>
+			<img src="img/img1.jpg">
+			<p>Photographer</p>
+		</div>		
+	</div>
+</body>
+</html>

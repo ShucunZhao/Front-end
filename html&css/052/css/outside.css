@@ -1,0 +1,38 @@
+a:link{
+	background-color: black;
+	color: white;
+}
+a:visited{
+	background-color: black;
+	color: white;
+}
+a:hover{
+	color: red;
+}
+a:active{
+	color: red;
+}
+
+/*
+#one{
+	color:green;
+}
+#two{
+	color: red!important;
+	background-color: yellow;
+}
+*/
+/*
+.test2{
+	color:green;
+}
+.test{
+	color: red!important;
+	background-color: yellow;
+}
+*/
+/*div{
+	color: red!important;
+	background-color: yellow;
+}
+*/

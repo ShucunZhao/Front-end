@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+.con{
+	width: 966px;
+	margin: 0 auto;	
+}
+.header{
+	height: 110px;
+	/*background: yellow;*/
+}
+
+.logo{
+	width: 265px;
+	height: 110px;
+	background: url(../img/logo.png);
+	float: left;
+}
+
+.headContent{
+	float: right;
+}
+
+.headContent ul{
+	height: 44px;
+	margin-top: 10px;
+	line-height: 44px;
+}
+
+.headContent li{
+	float: left;
+}
+
+.headContent li a{
+	border-right: 1px solid #abbdd7;
+	padding: 0 13px;
+	font-size: 13px;
+	color: #ababab;
+}
+
+.headContent .lastli{
+	border: 0;
+	padding-right: 0;
+}
+
+.headContent li .red{
+	color: #ed5eb5;
+}
+
+.search {
+	float: right;
+	width: 234px;
+	height: 28px;
+	border: 1px solid #d1d1d1;
+}
+
+.search input{
+	border: 0;
+	outline: none;
+}
+
+.search .left{
+	width: 196px;
+	float: left;
+	height: 28px;
+	padding-left: 14px;
+}
+
+.search .right{
+	float: right;
+	height: 28px;
+	width: 24px;
+	background: url(../img/search.png) no-repeat left center;
+}
+
+.navi{
+	height: 53px;
+	line-height: 53px;
+	border-top: 1px solid #657588;
+	background: #0c345c;
+	color: white;
+}
+
+.navi li{
+	float: left;
+	font-size: 16px;
+	margin-right: 75px;
+}
+
+.banner{
+	height: 380px;
+	background: url(../img/banner.png) no-repeat center;
+}
