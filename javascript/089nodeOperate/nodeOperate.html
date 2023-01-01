@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>OptionsList</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+    </style>
+</head>
+<body>
+	<div id="box">
+		<div id="child">111</div>
+	</div>
+	<script>
+		var odiv = document.createElement("div")
+		odiv.innerHTML = "I am new"
+		console.log(odiv)
+		box.appendChild(odiv)
+		box.insertBefore(odiv, child)
+		/*
+		box.removeChild(child)
+		box.remove()
+	   */
+		var odiv2 = document.createElement("div")
+		odiv2.innerHTML = "222"
+		box.replaceChild(odiv2, odiv)
+		var oClone = box.cloneNode(1)
+		console.log(oClone)
+		document.body.appendChild(oClone)
+	</script>
+</body>
+</html>

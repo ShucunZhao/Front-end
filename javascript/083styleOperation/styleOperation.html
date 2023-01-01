@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>StyleOperation</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			display: flex;
+			list-style: none;
+		}
+		li{
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			flex: 1;
+		}
+		.active{
+			color: red;
+			border-bottom: 1px solid red;
+		}
+    </style>
+</head>
+<body>
+	<ul>
+		<li class="active" id="item1">IsShowing</li>
+		<li id="item2">ComingSoon</li>
+	</ul>
+	<script>
+		item1.onclick = function(){
+			item1.classList.add("active")
+			item2.classList.remove("active")
+		}
+
+		item2.onclick = function(){
+			item1.classList.remove("active")
+			item2.classList.add("active")
+		}
+	</script>
+</body>
+</html>

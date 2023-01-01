@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>LocalStorage</title>
+	<style>
+    </style>
+</head>
+<body>
+    <button id="btn1">Save</button>
+	<button id="btn2">Get</button>
+	<button id="btn3">Delete</button>
+	<button id="btn4">Clear</button>
+	<button id="btn5">SaveObjByJSON</button>
+	<button id="btn6">GetObjByJSON</button>
+	<script>
+		btn1.onclick = function(){
+			localStorage.setItem("name", "value")
+			//Can only save into string type.
+		}
+		btn2.onclick = function(){
+			console.log(localStorage.getItem("name"))
+		}
+		btn3.onclick = function(){
+			localStorage.removeItem("name")
+		}
+		btn4.onclick = function(){
+			localStorage.clear()
+		}
+		btn5.onclick = function(){
+			localStorage.setItem("obj", JSON.stringify({name:"David",age:100}))
+		}
+		btn6.onclick = function(){
+			console.log(JSON.parse(localStorage.getItem("obj")))
+		}
+		//Permanent storage: localStorage, always exist in broswer.
+		//Temporary session storage: sessionStorage, will disapear when close the page.
+	</script>
+</body>
+</html>

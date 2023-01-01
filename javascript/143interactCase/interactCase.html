@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>Interact Case</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+    </style>
+</head>
+<body>
+	<input type="text" name="" id="mytext">
+	<button id="myadd">Add</button>
+	<ul  class="list">
+	</ul>
+	<script type="module">
+		import ajax from './util.js'
+		//console.log(ajax)
+		class TodoList{
+			constructor(select){
+				this.list = document.querySelector(select)
+			}
+		}
+		var obj = new TodoList(".list")
+	</script>
+</body>
+</html>

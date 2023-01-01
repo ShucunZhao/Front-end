@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>Object</title>
+	<script>
+		/*
+		var obj1 = {}
+		console.log(obj1)
+	   */
+		var obj2 = {
+			name: "David",
+			age: 23,
+			location: "CN"
+		}
+		console.log(obj2)
+		/*var obj3 = new Object()
+		console.log(obj3)
+		obj3.name = "Anner"
+		obj3.age = 22
+		obj3.location = "US"
+		console.log(obj3)
+		for(var i in obj3){
+			document.write(i+":"+obj3[i])
+			document.write("<br>")
+		}
+		delete obj3.location
+		for(var i in obj3){
+			document.write(i+":"+obj3[i])
+			document.write("<br>")
+		}*/
+		var obj4 = new Object()
+		for(var i in obj2){
+			obj4[i] = obj2[i]
+		}
+		document.write("obj4:")
+		document.write("<br>")
+		obj4["age"] = 22
+		for(var i in obj4){
+			document.write(i+":"+obj4[i])
+			document.write("<br>")
+		}
+		document.write("obj2:"+obj2["age"]);
+	</script>
+	<style>
+    </style>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>

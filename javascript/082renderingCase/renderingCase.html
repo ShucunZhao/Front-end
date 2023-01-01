@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>RenderingCase</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		li{
+			overflow: hidden;
+		}
+		li img{
+			float: left;
+			width: 100px;
+		}
+    </style>
+</head>
+<body>
+	<ul class = "comodity">
+		<!--<li>
+			<img src="https://static.maizuo.com/pc/v5/usr/movie/fceeb41a1660d097d02fbcbda3191d8f.jpg?x-oss-process=image/quality,Q_70">
+			<h3>阿凡达：水之道</h3>
+			<p>观众评分 7.4</p>
+		</li>-->
+	</ul>
+	<script>
+		var filmList = [
+			{
+				url:"https://static.maizuo.com/pc/v5/usr/movie/fceeb41a1660d097d02fbcbda3191d8f.jpg?x-oss-process=image/quality,Q_70",
+				title:"阿凡达：水之道",
+				grade:7.4
+			},
+			{
+				url:"https://static.maizuo.com/pc/v5/usr/movie/1f25dd6943762288dfd84b961c98f478.jpg?x-oss-process=image/quality,Q_70",
+				title:"航海王：红发歌姬",
+				grade:7.5
+			},
+			{
+				url:"https://static.maizuo.com/pc/v5/usr/movie/2da2cc429af2610a0006d066db8384a3.jpg?x-oss-process=image/quality,Q_70",
+				title:"名侦探柯南：万圣节的新娘",
+				grade:7.6
+			}	
+		]
+		var filmItems = filmList.map(function(item){
+			return `<li>
+						<img src="${item.url}">	
+						<h3>${item.title}</h3>
+						<p>Grade: ${item.grade}</p>
+					</li>`
+		})
+		console.log(filmItems.join(""))
+		var Info = document.querySelector("ul")
+		Info.innerHTML = filmItems.join("")
+	</script>
+</body>
+</html>

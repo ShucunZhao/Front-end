@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>ajaxCase</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+
+		.header{
+			display: flex;
+			width: 500px;
+		}
+		.header li{
+			flex: 1;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			border: 1px solid black;
+		}
+		.box{
+			position: relative;
+			height: 200px;
+		}
+		.box li{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 500px;
+			height: 200px;
+			background-color: yellow;
+			display: none;
+		}
+		.header .active{
+			background-color: red;
+		}
+		.box .active{
+			display: block;
+		}
+    </style>
+</head>
+<body>
+	<button id="btn">Get</button>	
+	<ul id="myList"></ul>
+	<script>
+		btn.onclick = function(){
+			var xhr = new XMLHttpRequest()
+			//console.log(xhr)
+			xhr.open("GET", "http://www.xiongmaoyouxuan.com:80/api/tabs")
+			xhr.send()
+			xhr.onload = function(){
+				if(xhr.status===200){
+					var jsonData = JSON.parse(xhr.responseText)
+					//console.log(xhr.responseText)
+					render(jsonData)
+				}
+			}
+		function render(inData){
+				console.log(inData.data.list)
+				var html = inData.data.list.map(item=>`
+					<li>
+						<img src = "${item.imageUrl}"/>
+						<div>${item.name}</div>
+					</li>
+				`)
+				myList.innerHTML = html.join("")		
+			}			
+		}
+	</script>
+</body>
+</html>

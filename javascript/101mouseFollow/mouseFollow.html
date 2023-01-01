@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>MouseFollow</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+		}
+		ul li{
+			overflow: hidden;
+			height: 150px;
+		}
+		#box{
+			height: 50px;
+			width: 200px;
+			background: yellow;
+		}
+		#box p{
+			width: 300px;
+			height: 200px;
+			background-color: red;
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			display: none;
+			pointer-events: none;
+		}
+    </style>
+</head>
+<body>
+	<div id="box">
+		My titile
+		<p>
+			Hey!Sup!
+		</p>
+	</div>
+	<script>
+		box.onmouseover = function(){
+			this.firstElementChild.style.display = "block"
+		}
+		box.onmouseout = function(){
+			this.firstElementChild.style.display = "none"
+		}	
+		box.onmousemove = function(evt){
+			console.log(evt.offsetX, evt.offsetY)
+			this.firstElementChild.style.left = evt.offsetX + "px"
+			this.firstElementChild.style.top = evt.offsetY + "px"
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>WindowCases</title>
+	<button id="box">Next</botton>
+	<script>
+		window.onload = function(){
+			console.log("Loaded finish")
+		}
+		window.onresize = function(){
+			console.log("resize")
+		}
+		console.log(document.documentElement.scrollTop)
+		window.onscroll = function(){
+			console.log(document.documentElement.scrollTop);
+		}
+	</script>
+	<style>
+    </style>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>

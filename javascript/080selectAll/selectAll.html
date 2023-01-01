@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-with, initial-scale=1.0, user-scalable=no">
+	<title>SelectALL</title>
+	<style>
+    </style>
+</head>
+<body>
+	<input type="checkbox" id="all">All
+	<ul class = "comodity">
+		<li>
+			<input type="checkbox">Comodity1
+		</li>
+		<li>
+			<input type="checkbox">Comodity2
+		</li>
+		<li>
+			<input type="checkbox">Comodity3
+		</li>
+		<li>
+			<input type="checkbox">Comodity4
+		</li>	
+	</ul>
+	<script>
+		var All = document.querySelector("#all")
+		var items = document.querySelectorAll(".comodity input")
+		var cnt = 0
+		console.log(items.length)
+		All.onclick = function(){
+			console.log(All.checked);
+			for(var i=0;i<items.length;i++){
+				items[i].checked = All.checked
+			}
+		}
+		for(var i=0;i<items.length;i++){
+			items[i].onclick = handler
+		}
+		function handler(){
+			cnt = 0;
+			for(var i=0;i<items.length;i++){
+				if(items[i].checked) cnt++
+			}
+			if(cnt===items.length){
+				All.checked = 1
+			}
+			else{
+				All.checked = 0
+			}
+		}	
+	</script>
+</body>
+</html>
